@@ -7,7 +7,7 @@
 
 ##association
   has_many :group_users
-  has_many :massages
+  has_many :messages
   has_many :groups,through: :groups_users
 
 
@@ -26,7 +26,7 @@
 ##messageテーブル
   |Column|Type|Options|
   |------|----|-------|
-  |body|text|null: false|
+  |body|text|
   |image|string|
   |group|references|foreign_key: true|
   |user|references|foreign_key: true|
@@ -38,8 +38,8 @@
 ##groups_usersテーブル
   |Column|Type|Options|
   |------|----|-------|
-  |user_id|integer|foreign_key: true|
-  |group_id|integer|foreign_key: true|
+  |user_id|references|null: false|
+  |group_id|references|null: false|
 
 ##association
   belongs_to :group
