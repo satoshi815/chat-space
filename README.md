@@ -32,8 +32,8 @@
   |user|references|foreign_key: true|
 
 ##association
-belongs_to :user
-belongs_to :group
+  belongs_to :user
+  belongs_to :group
 
 ##groups_usersテーブル
   |Column|Type|Options|
@@ -42,7 +42,7 @@ belongs_to :group
   |group_id|integer|foreign_key: true|
 
 ##association
-belongs_to :group
-belongs_to :user
+  belongs_to :group
+  belongs_to :user
 
 
