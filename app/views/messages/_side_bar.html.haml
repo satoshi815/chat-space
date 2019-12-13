@@ -1,0 +1,25 @@
+!!!
+%html{lang: "ja"}
+  %head
+    %meta{charset: "utf-8"}
+  %body
+    %side-ber_user-name
+    %side-ber_group-list
+
+    
+ 
+  .flash-box
+  .wrapper
+    .chat-side
+      .side-header
+        .side-header__box
+          %p.side-header__box__user-name satoshi
+          %ul.side-header__box__menu
+            %li.side-header__box__menu__new-group
+              %a{:href => "/groups/new"}
+                %i.fa.fa-edit
+            %li.side-header__box__menu__edit-user
+              %a{:href => "/users/6603/edit"}
+                %i.fa.fa-cog
+      .groups
+
