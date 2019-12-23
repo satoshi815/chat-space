@@ -20,10 +20,9 @@ float: left;
 
 a {
   color: white;
-}
-a {
   text-decoration: none;
 }
+
 .side-header{
 background-color: #253141;
 height: 100px;
@@ -59,14 +58,15 @@ height: calc(100vh - 100px);
 background-color: #2f3e51;
 padding: 20px 20px 0;
 overflow: scroll;
+
 .group{
   &__group-name{
   font-size: 15px;
   margin-bottom: 5px;
   }
-}
-.group__latest-message {
-font-size: 11px;
+  &__latest-message {
+  font-size: 11px;
+        }
       }
     }
   }
